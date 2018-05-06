@@ -1,0 +1,62 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Ricky Zaman Student ID: 121942171 Date: March 20, 2018 
+* main.html 1 warning + no errors = PASS 
+* a4-main.css no errors = PASS
+********************************************************************************/
+
+body{
+    background-color: rgb(203, 224, 212);
+}
+
+nav,footer{
+    background-color: rgb(0, 36, 7);
+}
+
+header{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 36, 7);
+    font-style: italic; 
+}
+
+.app-title{
+    font-family:IBM,Plex,serif;  /*<link> for this font is in the <head> of the main.html*/ 
+    font-size:200%;
+    text-shadow: 5px 5px 5px green; 
+}
+
+.main-table-container{
+    max-height: 425px;
+    overflow-y: scroll;  
+    background-color: rgb(177, 231, 199)
+}
+
+.main-table-top th{
+    background-color: rgb(0, 36, 7);
+    text-align: left;
+    border-style:inset;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.main-table td{
+    color:rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: inset; 
+    vertical-align: top; 
+}
+
+.main-table span{
+    font-weight: bold;
+    font-style: oblique;
+    font-stretch: expanded;
+}
