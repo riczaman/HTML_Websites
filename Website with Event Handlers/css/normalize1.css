@@ -1,0 +1,279 @@
+/* CSS for index.html and registration.html
+   Name: Ricky Zaman
+   Student ID: 121942171
+   Email: rzaman: 6 @myseneca
+   Date: April 6, 2018
+   normalize1.css
+*/   
+/*Hidden Fields placed under Last Name Input Tag and Username Input Tag*/
+/* index.html has no errors and 2 warnings = Passed W3C Validation */
+/* registration.html has no errors and 2 warnings = Passed W3C Validation */
+/* CSS Validated with no errors on W3C CSS validator */
+
+/* The body of both pages will be set to this color */ 
+body{
+    background-color: rgba(51, 44, 44, 0.9);
+}
+
+/* All panels that are in the element with class name = container will have 
+   a fixed width, a margin of 0 for top and bottom and auto horizontally 
+   with a background-color of white and a border. */ 
+.container{
+    width: 1200px;
+    margin: 0 auto; 
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid black; 
+
+}
+
+/* Header tag has a padding of 8px and a margin bottom of 30px. Also Includes 
+   a solid border. */ 
+header{
+    padding: 8px;
+    background-color: rgb(112, 2, 2);
+    border: 1px solid black;
+    border-top-left-radius:8px;
+    border-top-right-radius: 8px;
+    margin-bottom:30px;
+}
+
+/* For all h1 elements nested in the header element change the font to Actor.
+   change the font-size to 40px, font-style and font-weight to make the font
+   thicker and add a text-shadow. */    
+header h1{
+    font-family: 'Actor'; 
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    display:inline-block;
+    margin-left:10px; 
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* For all image elements nested in the header apply a float left so the image
+   can be aligned with the header text and set the width and height of the image
+   so it aligns well with the text. Margin-left is used to help center the header. */
+header img{
+    float:left;
+    width:120px;
+    height:100px;
+    margin-left:270px; 
+}
+
+/* For all nav elements set a fixed width of 200px and fixed height of 70px 
+   also, position it to the left. */
+nav{
+    width:200px;
+    padding:25px;
+    float:left;
+    height: 70px;
+    margin-bottom:20px;
+   
+}
+
+/* For all main elements set a fixed width of 700px, float it to the left 
+   and set a outset border of 8px. */
+main{
+    width: 700px;
+    float:left;
+    margin-left:15px;
+    border: 8px outset rgb(112, 2, 2);
+    padding:8px;
+    margin-bottom:10px;
+}
+
+/* For all section elements float to the left and adjust margin-left
+   to allow proper spacing between section and main element content. */
+section{
+    float:left;
+    margin-left:15px; 
+}
+
+/* For all section elements with class name = errmessage float to the left
+   set a inset border and fixed width of 150px. */
+section.errmessage{
+    float:left;
+    margin-left:15px; 
+    width:150px;
+    border:4px inset rgb(235, 232, 232);
+    padding:2px;
+  
+}
+
+/* For all footer elements apply clear to both sides so nothing can float
+   beside it. Change font and color to match header element. Apply a 
+   text-align of center. */ 
+footer{
+    clear:both;
+    text-align: center;
+    padding:22px;
+    font-family: 'Actor'; 
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold; 
+    background-color: rgb(112, 2, 2);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px solid black;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* For all legend elements nested within an element with class name main-form
+   change the font to Georgia and font-size to 25px and change the font-weight
+   to bolder. */
+.main-form legend{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    margin-bottom:10px; 
+    font-weight: bolder;
+    color:black;
+}
+
+/* For all form elements change the background color to a light grey color 
+   and adjust the border-radius. */
+form{
+    background-color: #f1f1f1;
+    border-radius:6px;
+}
+
+/* For all input and select elements nested within an element with class name
+   main-form change the font to Georgia, apply a border radiu, and font-size
+   to 12px. Also change box sizing so the the input boxes dont go outside the 
+   form. Change font-color to black. */
+.main-form input, .main-form select{
+    font-family: Georgia, "Times New Roman", Times, serif; 
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    color:black;
+    margin-bottom: 30px;
+}
+
+/* For all input and select elements nested within an element with class name
+   main-form change background color to a salmon color. */ 
+.main-form input:focus, .main-form select:focus{
+    background-color: rgb(209, 198, 198);
+}
+
+/* The next three selectors are used to place a red star after mandatory fields. */
+label:after{
+    content: " *";
+    color:red;
+}
+h6{
+    color:red; 
+}
+span.star:after{
+    content:" *";
+    color:red;
+}
+
+/* For all input elements with type = submit change background color to maroon and 
+   font-color to white. Also set the width so it does not go outside the form border. */
+input[type="submit"]
+{
+    background: rgb(112, 2, 2);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px; 
+    width:20%;
+
+}
+
+/* For all input elements with type = reset change the background color to blue and 
+   font-color to white and also set the width so it does not go outside the form border. */
+input[type="reset"]
+{
+    background: rgb(22, 2, 112);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px; 
+    width:20%;
+}
+
+/* The next two selectors are used to change the submit and reset buttons to a brighter
+   color when they are being hovered over. */ 
+input[type="submit"]:hover
+{
+    background: rgb(179, 5, 5);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px; 
+    width:20%;
+}
+
+input[type="reset"]:hover
+{
+    background: rgb(33, 3, 206);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px; 
+    width:20%;
+}
+
+/* For all elements with class name panel set fixed height of 600px and float
+   to the left. */ 
+.panel{
+    height:600px;
+    float:left; 
+    margin-left:35px; 
+    margin-bottom:10px; 
+}
+
+/* For all ul elements nested within a nav element display no list-style-type
+   and a fixed width of 200px. Also has a light grey background-color. */  
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+/* The next 5 selectors are used for all <a> tags nested within a li tag that nested within
+   a nav element. Change color for link, visited, hover and active. */ 
+nav li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+}
+
+nav li a:link{
+    color:blue;
+}
+
+nav li a:visited{
+    color:purple;
+}
+nav li a:hover {
+    background-color:rgb(112, 2, 2);
+    color: white;
+}
+
+nav li a:active{
+    color:green;
+}
+
+/* For all li tags with class name nav-title nested within a nav element change the display
+   to block, font-color white and a background color of maroon. */
+nav li.nav-title{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bolder;
+    background-color: rgb(112, 2, 2);
+}
+
+/* For all elements with classname = errmessage change font color to red. */ 
+.errmessage{
+    color: red;
+}
