@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-Up Form: Zaman</title>
+        <link rel="stylesheet" href="css/normalize1.css">
+        <script src="js/registration.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="index-header">
+                <h1>Welcome to Zaman Athletics</h1>
+                <img src="img/logo.png" alt="logo">
+            </header>
+
+            <aside>
+                <nav>
+                    <ul>
+                        <li class="nav-title">Navigation</li>
+                        <li><a href="index.html">Welcome</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main>
+                <div class="main-form">
+                    <form name="signup" action="https://httpbin.org/post" method="post" onsubmit ="return Validate();">
+                        <fieldset>
+                            <legend><span>Sign Up Form</span></legend>
+                            <h6>Mandatory Fields<span class="star"></span></h6>    
+                            <label> First Name</label><br>
+                            <input type="text" name="First Name" required="required" pattern="[a-zA-Z]{1,}">
+                            <br>
+                    
+                            <label> Last Name</label><br>
+                            <input type="text" name="Last Name" required="required" pattern="[a-zA-Z]{1,}">
+                            <input type="hidden" name="lastName" id="lastName" value="Zaman" />
+                            <br>
+                    
+                            <label> Username</label><br>
+                            <input type="text" name="user" required="required" onchange="return userCheck(this);">
+                            <input type="hidden" name="studentId" id="studentId" value="121942171" />
+                            <br>
+                    
+                            <label> Password</label><br>
+                            <input type="password" name="pass" required="required" onchange="return passwordCheck(this);">
+                            <br>
+                    
+                            <label>Retype Password</label><br>
+                            <input type="password" name="repass" required="required" onchange="return passwordCheck(this);">
+                            <br>
+                    
+                            <label> Email</label><br>
+                            <input type="email" name="Email" required="required">
+                            <br>
+                    
+                            <label> Phone Number</label><br>
+                            <input type="tel" name="Phone Number" required="required" placeholder="111-111-1111" 
+                            pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$" title="XXX-XXX-XXXX">
+                            <br>
+                    
+                            <label> Street Number</label><br>
+                            <input type="text" name="Street Number" required="required">
+                            <br>
+                    
+                            <label> Street Name</label><br>
+                            <input type="text" name="street" required="required" onchange="return checkStreet(this);">
+                            <br>
+                    
+                            <label> Unit Number</label><br>
+                            <input type="text" name="Unit No" required ="required">
+                            <br>
+                    
+                            <label> City</label><br>
+                            <input type="text" name="city" required="required" onchange="return checkCity(this);">
+                            <br>
+                    
+                            <label>Province</label><br>
+                            <select name="Province" required="required">
+                                <option value="">Choose Your Province</option>
+                                <option value="1" selected="selected">Ontario</option>
+                                <option value="2">Alberta</option>
+                                <option value="3">British Columbia</option>
+                                <option value="4">Manitoba</option>
+                                <option value="5">New Brunswick</option>
+                                <option value="6">Newfoundland</option>                               
+                                <option value="7">Nova Scotia</option>                             
+                                <option value="8">Prince Edward Island</option>
+                                <option value="9">Quebec</option>
+                                <option value="10">Saskatchewan</option>
+                                
+                            </select>
+                            <br>
+                    
+                            <label>Zip Code</label><br>
+                            <input type="text" name="Postal Code" required="required" 
+                            pattern="^[A-Z][0-9][A-Z][0-9][A-Z][0-9]$" title="Only Canadian format
+                            accepted; Letter Digit Letter Digit Letter Digit">
+                        
+                            <input type="reset" value="Reset">
+                            <input type="submit" value="Submit">   
+                        </fieldset>
+                        
+                    </form>
+                    
+                </div>
+            </main>
+
+            <section class="errmessage">
+                    
+            </section>
+
+            <footer>
+                    &copy; 2018 Zaman Athletics
+            </footer>
+        </div>
+    </body>
+</html>
